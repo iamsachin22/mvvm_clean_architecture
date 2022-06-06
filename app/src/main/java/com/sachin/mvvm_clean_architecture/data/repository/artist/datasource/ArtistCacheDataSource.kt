@@ -1,0 +1,9 @@
+package com.sachin.mvvm_clean_architecture.data.repository.artist.datasource
+
+import com.sachin.mvvm_clean_architecture.data.model.artist.Artist
+
+interface ArtistCacheDataSource {
+    suspend fun getArtistsFromCache():List<Artist>
+    suspend fun saveArtistsToCache(artists:List<Artist>)
+
+}
